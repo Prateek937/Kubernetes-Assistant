@@ -98,6 +98,6 @@ elif command[0] == '2':
     elif keywords['image'] != '':
         cmd = 'kubectl {} {} {} --image={}'.format(keywords['command'], keywords['resource'], keywords['name'], keywords['image']) 
     else:
-        cmd = 'kubectl {} {} {} {}}'.format(keywords['command'], keywords['resource'], keywords['name'], keywords['image']) 
+        cmd = 'kubectl {} {} {} {}'.format(keywords['command'], keywords['resource'], keywords['name'], keywords['image']) 
     
     print("#" + cmd + "\n" + executeCommand(cmd))
